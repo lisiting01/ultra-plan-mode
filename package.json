@@ -1,0 +1,32 @@
+{
+  "name": "ultra-plan-mode",
+  "version": "0.1.0",
+  "description": "Multi-CLI plan mode orchestrator — orchestrates Claude Code, Codex, and Gemini CLI via Web UI",
+  "keywords": ["claude", "codex", "gemini", "plan-mode", "ai", "cli", "planning"],
+  "license": "MIT",
+  "bin": {
+    "ultra-plan": "./bin/ultra-plan.js",
+    "ultra-plan-config": "./bin/ultra-plan-config.js"
+  },
+  "files": [
+    "bin/",
+    "server/src/",
+    "server/dist/",
+    "server/data/ultra-plan-config.defaults.json",
+    "server/data/discussion-template.default.md",
+    "server/package.json",
+    "server/tsconfig.json",
+    "web/src/",
+    "web/dist/",
+    "web/package.json",
+    "web/index.html",
+    "web/vite.config.ts",
+    "web/tsconfig.json"
+  ],
+  "engines": {
+    "node": ">=18"
+  },
+  "scripts": {
+    "build": "cd server && npm run build && cd ../web && npm run build"
+  }
+}

@@ -1,0 +1,10 @@
+node_modules/
+server/dist/
+web/dist/
+*.tsbuildinfo
+server/data/ultra-plan-config.json
+server/data/sessions.json
+server/logs/
+*.env
+.DS_Store
+Thumbs.db

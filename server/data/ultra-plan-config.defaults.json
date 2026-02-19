@@ -1,0 +1,13 @@
+{
+  "readyKeyword": "ULTRAPLAN_READY",
+  "readyProbePrompt": "This is a system readiness check. Reply with exactly the word ULTRAPLAN_READY and nothing else.",
+  "readyTimeoutMs": 60000,
+  "systemPrompt": "",
+  "idleCompleteMs": 20000,
+  "questionTimeoutMs": 300000,
+  "discussionRounds": 5,
+  "discussionTurnTimeoutMs": 300000,
+  "enableConsensusSummary": true,
+  "enablePlanGeneration": true,
+  "discussionLanguage": "zh-CN"
+}
