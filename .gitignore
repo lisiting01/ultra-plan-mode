@@ -8,3 +8,6 @@ server/logs/
 *.env
 .DS_Store
 Thumbs.db
+.claude/
+AGENTS.md
+CLAUDE.md
