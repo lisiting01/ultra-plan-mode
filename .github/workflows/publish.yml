@@ -8,6 +8,8 @@ on:
 jobs:
   publish:
     runs-on: ubuntu-latest
+    permissions:
+      id-token: write  # required for trusted publishing (OIDC)
     steps:
       - uses: actions/checkout@v4
 
@@ -29,6 +31,6 @@ jobs:
           npm run build
 
       - name: Publish
-        run: npm publish
+        run: npm publish --provenance --access public
         env:
           NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
